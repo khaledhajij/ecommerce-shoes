@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  font-family: Montserrat;
+  margin: 0px;
+  transition-duration: 0.2s;
+}
+
+.my-container {
+  margin: 0px 50px;
+}
+
+.navbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+.navbar .my-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar input {
+  background-color: #e8e8e8;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 50px;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+.navbar .logo p {
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.navbar .logo p span {
+  font-weight: 500;
+}
+.navbar .pi-search {
+  transform: translateY(-50%);
+}
+
+.hero {
+  display: flex;
+  padding: 0px 120px;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero div.text-section .blue-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #3e6d9a;
+  border-radius: 50%;
+}
+.hero div.text-section * {
+  font-family: montserrat;
+}
+.hero div.text-section .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero div.text-section .text div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: end;
+}
+.hero div.text-section .text div .circles-div {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.hero div.text-section .text div h1 {
+  color: #3e6d9a;
+}
+.hero div.text-section .text div h1 span {
+  color: #da4d69;
+}
+.hero div.text-section .text p {
+  width: 600px;
+  color: gray;
+}
+.hero div.image-section {
+  position: relative;
+  filter: brightness(1.1);
+}
+.hero div.image-section img {
+  width: 30vw;
+}
+.hero div.image-section .red-circle {
+  width: 15vw;
+  height: 15vw;
+  background-color: #da4d69;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  left: -10%;
+}
+.hero div.image-section .yellow-circle {
+  width: 20vw;
+  height: 20vw;
+  background-color: #dfcd4e;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  left: 15%;
+  z-index: -2;
+}
+
+.shoe-card {
+  display: flex;
+  flex-direction: column;
+  width: -moz-min-content;
+  width: min-content;
+}
+.shoe-card .name-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+.shoe-card h3 {
+  width: 50%;
+  font-size: 14px;
+}
+.shoe-card .image-container {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 3px solid black;
+}
+.shoe-card .image-container:hover img {
+  transform: scale(1.2);
+  rotate: 0deg;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.shoe-card .image-container img {
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  rotate: -25deg;
+}
+
+.top {
+  position: relative;
+}
+.top p.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.top .shoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  margin-bottom: 30px;
+}
+.top .left-angle,
+.top .right-angle {
+  position: absolute;
+  top: 50%;
+  font-size: 46px;
+}
+.top .left-angle {
+  left: 0px;
+}
+.top .right-angle {
+  right: 0px;
+}/*# sourceMappingURL=index.css.map */
