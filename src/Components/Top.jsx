@@ -1,41 +1,39 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
 import { shoesSelector } from '../app/shoesSlice'
 import ShoeCard from './ShoeCard'
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
-
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 const Top = () => {
-  const shoes = useSelector(shoesSelector)
-  const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 3
-  const indexOfLastItem = currentPage * itemsPerPage
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage
-  const currentItems = shoes.slice(indexOfFirstItem, indexOfLastItem)
-
-  const handlePrevClick = () => {
-    setCurrentPage(currentPage - 1)
-  }
-
-  const handleNextClick = () => {
-    setCurrentPage(currentPage + 1)
-  }
-
-  const prevButtonDisabled = currentPage === 1
-  const nextButtonDisabled = indexOfLastItem >= shoes.length
-
-  const shoeCards = currentItems.map(shoe => <ShoeCard {...shoe} />)
-
+  const topShoes = useSelector(shoesSelector)
+  console.log(topShoes)
+  const topShoesRen = topShoes.map(shoe => (
+    <SwiperSlide>
+      <ShoeCard {...shoe} />
+    </SwiperSlide>
+  ))
   return (
     <div className='top'>
-      <div className='my-container'>
-        <p className='title'>LEADING SHOES</p>
-        {!prevButtonDisabled && (
-          <FaAngleLeft className='left-angle' onClick={handlePrevClick} />
-        )}
-        <div className='shoes-grid'>{shoeCards}</div>
-        {!nextButtonDisabled && (
-          <FaAngleRight className='right-angle' onClick={handleNextClick} />
-        )}
+      <div className="my-container">
+        <p className='title'>Leading Shoes</p>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          cssMode={true}
+          slidesPerView={3}
+          slidesPerGroup={3}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          {topShoesRen}
+          ...
+        </Swiper>
       </div>
     </div>
   )

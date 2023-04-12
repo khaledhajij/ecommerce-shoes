@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <img src={nikeLogo} alt='' />
         <span className='p-input-icon-right'>
-          <InputText placeholder='Search' />
+          <InputText placeholder='' />
           <i className='pi pi-search' />
         </span>
       </div>

@@ -20,7 +20,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/ccf5f7e1-4a4c-460d-a8c4-a93f99050c50/air-force-1-07-essential-shoe-BHN3Db.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/7f0d8790-7309-4d95-96f1-280b2c3e5cf3/air-force-1-07-essential-shoe-BHN3Db.jpg'
     ],
-    list: 'Air force 1'
+    list: 'Air force 1',
+    category: 'Air force 1'
   },
   {
     url: 'https://www.nike.com/in/t/air-force-1-07-shoe-jKJ8T4/CT4328-101',
@@ -43,7 +44,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/88d05d8d-d703-4dbf-ace5-29561dfc322a/air-force-1-07-shoe-jKJ8T4.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/cb003eed-963e-4f1b-87c5-a437ef47c6ff/air-force-1-07-shoe-jKJ8T4.jpg'
     ],
-    list: 'Air force 1'
+    list: 'Air force 1',
+    category: 'Air force 1'
   },
   {
     url: 'https://www.nike.com/in/t/air-force-1-sage-low-lx-shoe-nTkdbB/CI3482-200',
@@ -66,7 +68,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/a222f074-a941-45d1-9d7d-f31b7d6e764a/air-force-1-sage-low-lx-shoe-nTkdbB.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/6c2dcb7d-fb1f-4aff-8d7f-060f33866cb4/air-force-1-sage-low-lx-shoe-nTkdbB.jpg'
     ],
-    list: 'Air force 1'
+    list: 'Air force 1',
+    category: 'Air force 1'
   },
   {
     url: 'https://www.nike.com/in/t/air-max-dia-se-shoe-CH3Phk/CD0479-200',
@@ -87,7 +90,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/3e187963-5a01-4646-85da-15f2ed253f54/air-max-dia-se-shoe-CH3Phk.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/f214164e-0a55-4dd3-81cc-73d530de444d/air-max-dia-se-shoe-CH3Phk.jpg'
     ],
-    list: 'Air Max'
+    list: 'Air Max',
+    category: 'Air Max'
   },
   {
     url: 'https://www.nike.com/in/t/air-max-verona-shoe-BN7zWH/CZ6156-101',
@@ -110,7 +114,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/i1-d4f5cd7a-a0d9-42f5-aa17-2908fe97fe38/air-max-verona-shoe-BN7zWH.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/i1-3bb0e843-5757-4689-ae58-a2ded71ab18f/air-max-verona-shoe-BN7zWH.jpg'
     ],
-    list: 'Air Max'
+    list: 'Air Max',
+    category: 'Air Max'
   },
   {
     url: 'https://www.nike.com/in/t/free-metcon-3-training-shoe-NMfJ2J/CJ6314-146',
@@ -135,7 +140,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/0de71a63-56ae-42a0-a83b-8c41203250a4/free-metcon-3-training-shoe-NMfJ2J.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/cc3a7f6b-1a97-4c24-a3a3-6cc796476c12/free-metcon-3-training-shoe-NMfJ2J.jpg'
     ],
-    list: 'Training'
+    list: 'Training',
+    category: 'Training'
   },
   {
     url: 'https://www.nike.com/in/t/nikecourt-blanc-shoe-lKw62P/CI0808-100',
@@ -156,7 +162,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/50c6e4d6-ba3f-4366-b3a7-5e922414a5a6/nikecourt-blanc-shoe-lKw62P.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/41dcd09b-4044-4478-83bf-75da511aaaaf/nikecourt-blanc-shoe-lKw62P.jpg'
     ],
-    list: ''
+    list: '',
+    category: ''
   },
   {
     url: 'https://www.nike.com/in/t/zoom-pegasus-turbo-2-running-shoe-sQMJVQ/AT8242-009',
@@ -179,7 +186,8 @@ const data = [
       'https://static.nike.com/a/images/t_PDP_1728_v1/i1-76500301-daf5-435b-afc7-66ba86e1d45f/zoom-pegasus-turbo-2-running-shoe-sQMJVQ.jpg',
       'https://static.nike.com/a/images/t_PDP_1728_v1/i1-ac8e8e8f-9bab-4702-915c-e6c9f4244d20/zoom-pegasus-turbo-2-running-shoe-sQMJVQ.jpg'
     ],
-    list: 'Training'
+    list: 'Training',
+    category: 'Training'
   }
 ]
 

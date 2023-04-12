@@ -9,6 +9,8 @@ import Hero from './Components/Hero'
 import { fetchShoes } from './app/shoesSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import Top from './Components/Top'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import DiscoverCategories from './Components/DiscoverCategories'
 
 function App () {
   const dispatch = useDispatch()
@@ -22,6 +24,7 @@ function App () {
       <Navbar />
       <Hero />
       <Top />
+      <DiscoverCategories />
     </div>
   )
 }

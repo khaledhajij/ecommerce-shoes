@@ -3,23 +3,62 @@
   font-family: Montserrat;
   margin: 0px;
   transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+p {
+  margin-bottom: 0px !important;
 }
 
 .my-container {
   margin: 0px 50px;
 }
 
-.navbar {
-  margin-top: 10px;
+.circles-div,
+.circles {
   display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.blue-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #3e6d9a;
+  border-radius: 50%;
+}
+
+.btn-my-primary {
+  background-color: #da4d69;
+}
+
+.btn {
+  background: #da4d69 !important;
+  border-color: #da4d69 !important;
+  border-radius: 30px !important;
+}
+.btn.btn-buy {
+  padding: 15px 25px;
+}
+.btn:hover {
+  background: #d22b4d !important;
+  border-color: #d22b4d !important;
+}
+
+.navbar {
+  padding-top: 10px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  position: fixed !important;
+  width: 100% !important;
+  background-color: #ffffff !important;
+  z-index: 3 !important;
 }
 .navbar .my-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 0px 50px;
 }
 .navbar input {
   background-color: #e8e8e8;
@@ -40,23 +79,25 @@
 .navbar .logo p span {
   font-weight: 500;
 }
+.navbar input {
+  border: 1px solid black;
+}
 .navbar .pi-search {
-  transform: translateY(-50%);
+  transform: translateY(-4px);
+  color: black !important;
+  font-weight: 600 !important;
 }
 
 .hero {
   display: flex;
-  padding: 0px 120px;
+}
+.hero .my-container {
+  display: flex;
+  margin: 0px 120px;
   height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-}
-.hero div.text-section .blue-circle {
-  width: 10px;
-  height: 10px;
-  background-color: #3e6d9a;
-  border-radius: 50%;
 }
 .hero div.text-section * {
   font-family: montserrat;
@@ -66,21 +107,28 @@
   flex-direction: column;
   gap: 30px;
 }
-.hero div.text-section .text div {
+.hero div.text-section .text div.buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 22vw;
+}
+.hero div.text-section .text div.buy-button div.circles {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero div.text-section .text div.title-circles {
   display: flex;
   justify-content: flex-start;
   gap: 50px;
   align-items: end;
 }
-.hero div.text-section .text div .circles-div {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 10px;
-}
-.hero div.text-section .text div h1 {
+.hero div.text-section .text div.title-circles h1 {
   color: #3e6d9a;
 }
-.hero div.text-section .text div h1 span {
+.hero div.text-section .text div.title-circles h1 span {
   color: #da4d69;
 }
 .hero div.text-section .text p {
@@ -116,6 +164,19 @@
   left: 15%;
   z-index: -2;
 }
+.hero .qoute {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  color: gray;
+}
+
+div.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
 
 .shoe-card {
   display: flex;
@@ -123,21 +184,40 @@
   width: -moz-min-content;
   width: min-content;
 }
-.shoe-card .name-price {
+.shoe-card .info-container p {
+  margin-bottom: 0px;
+}
+.shoe-card .info-container .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.shoe-card .info-container .card-text .category,
+.shoe-card .info-container .card-text .colors-available {
+  color: #939291;
+  font-size: 12px;
+}
+.shoe-card .info-container .buy-price {
   display: flex;
   justify-content: space-between;
-  padding: 0px 5px;
+  align-items: center;
+}
+.shoe-card .info-container .buy-price .price {
+  font-weight: 600;
 }
 .shoe-card h3 {
-  width: 50%;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .shoe-card .image-container {
   background-color: #f5f5f5;
   overflow: hidden;
   margin-bottom: 10px;
-  border-radius: 30px;
-  border: 3px solid black;
+  width: 250px;
 }
 .shoe-card .image-container:hover img {
   transform: scale(1.2);
@@ -147,8 +227,8 @@
 }
 .shoe-card .image-container img {
   border-radius: 10px;
-  width: 250px;
-  height: 250px;
+  width: 18vw;
+  height: 240px;
   -o-object-fit: contain;
      object-fit: contain;
   background-color: #f5f5f5;
@@ -163,7 +243,7 @@
   text-align: center;
   font-weight: 600;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 90px !important;
 }
 .top .shoes-grid {
   display: grid;
@@ -182,4 +262,87 @@
 }
 .top .right-angle {
   right: 0px;
+}
+
+.discover-categories {
+  height: 100vh;
+}
+.discover-categories .circles-container {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+.discover-categories .circles-container .circles {
+  flex-direction: column;
+  margin-top: 20px;
+}
+.discover-categories .my-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 100px;
+  height: 100%;
+}
+.discover-categories .my-container h2,
+.discover-categories .my-container p {
+  text-align: center;
+  width: 100%;
+}
+.discover-categories .my-container p {
+  color: gray;
+  width: 300px;
+  margin: auto;
+  margin-right: 0px;
+}
+.discover-categories .my-container .image-description {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+}
+.discover-categories .my-container .image-description .image-container {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.discover-categories .my-container .image-description .image-container img {
+  width: 40vw;
+}
+.discover-categories .my-container .image-description .image-container .discover {
+  width: 15vw;
+  height: 25%;
+  background-color: #da4d69;
+  border-top-right-radius: 30px;
+  position: absolute;
+  right: -28%;
+  bottom: 35%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.discover-categories .my-container .image-description .image-container .running-category {
+  background-color: #3e6d9a;
+  color: white;
+  position: absolute;
+  right: -52%;
+  height: 33%;
+  display: flex;
+  width: 27vw;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 30px;
+  bottom: 2%;
+  z-index: -1;
+  font-size: 20px;
+}
+.discover-categories .qoute {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  color: gray;
 }/*# sourceMappingURL=index.css.map */

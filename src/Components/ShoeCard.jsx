@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaRegStar } from 'react-icons/fa'
+import { FaRegStar, FaShoppingCart } from 'react-icons/fa'
 
 const ShoeCard = props => {
   return (
@@ -8,9 +8,16 @@ const ShoeCard = props => {
         <img src={props.images[0]} alt={props.name} />
       </div>
       <div className='info-container'>
-        <div className='name-price'>
+        <div className='card-text'>
           <h3>{props.name.toUpperCase()}</h3>
-          <div class='price'>Rs. {props.salePrice}</div>
+          <p className='category'>{props.category}</p>
+          <p className='colors-available'>1 Color</p>
+        </div>
+        <div className='buy-price'>
+          <p className='price'>{props.salePrice * 0.012} $</p>
+          <button className='btn btn-primary'>
+            <FaShoppingCart />
+          </button>
         </div>
         <div class='rating'>
           <i class='fas fa-star'></i>
