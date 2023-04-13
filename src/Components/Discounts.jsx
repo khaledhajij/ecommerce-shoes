@@ -9,18 +9,18 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-const Top = () => {
-  const topShoes = useSelector(shoesSelector).filter(shoe => shoe.rating >= 4.5).slice(0,17)
-  console.log(topShoes)
-  const topShoesRen = topShoes.map(shoe => (
+
+const Discounts = () => {
+  const discountShoes = useSelector(shoesSelector).filter(shoe => shoe.discount).slice(0,18)
+  const topShoesRen = discountShoes.map(shoe => (
     <SwiperSlide>
       <ShoeCard {...shoe} />
     </SwiperSlide>
   ))
   return (
-    <div className='top'>
+    <div className='discounts'>
       <div className='my-container'>
-        <p className='title'>Leading Shoes</p>
+        <p className='title'>Discounts</p>
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -39,4 +39,4 @@ const Top = () => {
   )
 }
 
-export default Top
+export default Discounts

@@ -2,9 +2,23 @@ import React from 'react'
 import reactFlyknit from '../Assets/react-flyknit.png'
 
 const DiscoverCategories = () => {
-  const dots = Array.from({ length: 3 }).map(e => (
-    <div className='blue-circle'></div>
-  ))
+  const dots = Array.from({ length: 30 }).map((e, index) => {
+    return (
+      <div className='circles'>
+        {index % 2 ? (
+          <>
+            <div className='red-circle'></div>
+            <div className='blue-circle'></div>
+          </>
+        ) : (
+          <>
+            <div className='blue-circle'></div>
+            <div className='red-circle'></div>
+          </>
+        )}
+      </div>
+    )
+  })
   return (
     <div className='discover-categories'>
       <div className='my-container'>
@@ -23,11 +37,7 @@ const DiscoverCategories = () => {
             performance and style.
           </p>
         </div>
-        <div className='circles-container'>
-          {Array.from({ length: 30 }).map(e => (
-            <div className='circles'>{dots}</div>
-          ))}
-        </div>
+        <div className='circles-container'>{dots}</div>
         <p className='qoute'>
           "The will to win is not nearly as important as the will to prepare to
           win." <br />- Bobby Knight

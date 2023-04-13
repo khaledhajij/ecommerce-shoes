@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { useEffect } from 'react'
 import Navbar from './Components/Navbar'
 import 'primereact/resources/themes/lara-light-indigo/theme.css'
@@ -11,6 +10,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import Top from './Components/Top'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DiscoverCategories from './Components/DiscoverCategories'
+import Discounts from './Components/Discounts'
+import Footer from './Components/Footer'
 
 function App () {
   const dispatch = useDispatch()
@@ -25,6 +26,8 @@ function App () {
       <Hero />
       <Top />
       <DiscoverCategories />
+      <Discounts />
+      <Footer/>
     </div>
   )
 }

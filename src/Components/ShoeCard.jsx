@@ -1,5 +1,27 @@
-import React, { useState } from 'react'
-import { FaRegStar, FaShoppingCart } from 'react-icons/fa'
+import React from 'react'
+import {
+  FaRegStar,
+  FaShoppingCart,
+  FaStar,
+  FaStarHalf,
+  FaStarHalfAlt
+} from 'react-icons/fa'
+
+function StarRating ({ rating }) {
+  const fullStars = Math.floor(rating)
+  const hasHalfStar = rating % 1 !== 0
+
+  return (
+    <div>
+      {/* Full stars */}
+      {Array.from({ length: fullStars }).map((_, i) => (
+        <FaStar key={i} />
+      ))}
+      {/* Half star */}
+      {hasHalfStar && <FaStarHalf />}
+    </div>
+  )
+}
 
 const ShoeCard = props => {
   return (
@@ -21,11 +43,7 @@ const ShoeCard = props => {
         </div>
         <div class='rating'>
           <i class='fas fa-star'></i>
-          <span>
-            {Array.from({ length: props.rating }).map((_, i) => (
-              <FaRegStar key={i} />
-            ))}
-          </span>
+          <StarRating rating={props.rating} />
         </div>
       </div>
     </div>
