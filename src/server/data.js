@@ -8803,3 +8803,42 @@ export const listsArr = [...new Set(data.map(shoe => shoe.list).flat())]
   })
 
 export default data
+
+export const testimonials = [
+  {
+    name: "Jack",
+    comment: "I recently purchased the Nike Air Max sneakers from this website and I'm so happy with my purchase! They're comfortable and stylish, and I've gotten so many compliments on them."
+  },
+  {
+    name: "Alex",
+    comment: "I'm a big fan of Nike shoes, and this website has the best selection I've seen. I was able to find the perfect pair for my style and they arrived quickly and in great condition."
+  },
+  {
+    name: "Ethan",
+    comment: "I play basketball and these Nike shoes are perfect for the court. They're supportive and comfortable, and they look great too!"
+  },
+  {
+    name: "Max",
+    comment: "I ordered a pair of Nike running shoes from this website and I've been really impressed with the quality. They're lightweight and breathable, which makes my runs more enjoyable."
+  },
+  {
+    name: "Ryan",
+    comment: "I'm always on the lookout for new sneakers and this website has a great selection of Nike shoes. I love the color options and styles available."
+  },
+  {
+    name: "Tyler",
+    comment: "These Nike shoes are so versatile - I can wear them to the gym or out on the town. They're comfortable and stylish, and I've already gotten so much use out of them."
+  },
+  {
+    name: "Luke",
+    comment: "I'm really impressed with the customer service on this website. I had a question about sizing and their team was quick to respond and provide helpful advice."
+  },
+  {
+    name: "Owen",
+    comment: "The Nike shoes I ordered from this website arrived quickly and in perfect condition. I appreciate the fast shipping and quality packaging."
+  },
+  {
+    name: "Noah",
+    comment: "I love my new Nike sneakers! They're comfortable and stylish, and they look great with all of my outfits. I'll definitely be ordering from this website again."
+  }
+];

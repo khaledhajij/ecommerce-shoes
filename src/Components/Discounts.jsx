@@ -18,9 +18,9 @@ const Discounts = () => {
     </SwiperSlide>
   ))
   return (
-    <div className='discounts'>
+    <div className='discounts' id='Discounts'>
       <div className='my-container'>
-        <p className='title'>Discounts</p>
+        <h2 className='title'>Discounts</h2>
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}

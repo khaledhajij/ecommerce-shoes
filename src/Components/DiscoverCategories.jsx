@@ -4,7 +4,7 @@ import reactFlyknit from '../Assets/react-flyknit.png'
 const DiscoverCategories = () => {
   const dots = Array.from({ length: 30 }).map((e, index) => {
     return (
-      <div className='circles'>
+      <div className='circles' id='Categories'>
         {index % 2 ? (
           <>
             <div className='red-circle'></div>

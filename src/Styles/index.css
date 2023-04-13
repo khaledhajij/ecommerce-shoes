@@ -255,16 +255,36 @@ div.swiper-slide {
   rotate: -25deg;
 }
 
-.top,
-.discounts {
-  position: relative;
+.about-us {
   margin-top: 100px;
 }
-.top p.title,
-.discounts p.title {
+.about-us h2 {
+  margin-bottom: 30px;
+}
+.about-us h2,
+.about-us p {
+  width: 700px;
   text-align: center;
-  font-weight: 600;
-  font-size: 24px;
+  margin: 10px auto;
+}
+.about-us p {
+  color: gray;
+}
+
+.top,
+.discounts {
+  background: #f6f6f6;
+  height: 100vh;
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top h2.title,
+.discounts h2.title {
+  text-align: center;
+  font-weight: 500;
   margin-bottom: 90px !important;
 }
 .top .shoes-grid,
@@ -386,13 +406,17 @@ footer.footer p {
 }
 footer.footer .my-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 50px;
+  margin: 0px;
 }
 footer.footer .my-container a {
   text-decoration: none;
-  color: #da4d69;
+  color: gray;
+}
+footer.footer .my-container a:hover {
+  color: rgb(162, 162, 162);
 }
 footer.footer .my-container > div {
   display: flex;
@@ -401,8 +425,16 @@ footer.footer .my-container > div {
   align-items: center;
   justify-content: start;
 }
-footer.footer .my-container > div:last-of-type {
-  flex-direction: row;
+footer.footer .my-container > div svg {
+  color: gray;
+  font-size: 35px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+footer.footer .my-container > div svg:hover {
+  color: white;
+  background-color: gray;
 }
 footer.footer .my-container > div p {
   position: relative;
@@ -419,4 +451,51 @@ footer.footer .my-container > div p::after {
   height: 2px;
   background-color: #da4d69;
   left: 0px;
+}
+
+.testimonials {
+  margin: 100px 0px;
+}
+.testimonials .swiper.swiper-initialized.swiper-horizontal.swiper-css-mode {
+  height: 450px;
+}
+.testimonials h2 {
+  margin-bottom: 75px;
+}
+.testimonials .my-container {
+  text-align: center;
+}
+.testimonials .my-container .testimonial {
+  height: 250px;
+  color: gray;
+  width: 400px;
+  margin: auto;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 40px;
+}
+.testimonials .my-container .testimonial .name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #da4d69;
+}
+.testimonials .my-container .testimonial .left-quote, .testimonials .my-container .testimonial .right-quote {
+  color: #da4d69;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.testimonials .my-container .testimonial p {
+  width: 300px;
+  margin: 10px auto;
+}
+.testimonials .my-container .testimonial .circle {
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=index.css.map */

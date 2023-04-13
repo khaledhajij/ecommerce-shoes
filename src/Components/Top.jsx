@@ -18,9 +18,9 @@ const Top = () => {
     </SwiperSlide>
   ))
   return (
-    <div className='top'>
+    <div className='top' id='leadingShoes'>
       <div className='my-container'>
-        <p className='title'>Leading Shoes</p>
+        <h2 className='title'>Leading Shoes</h2>
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}

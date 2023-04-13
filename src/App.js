@@ -12,6 +12,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import DiscoverCategories from './Components/DiscoverCategories'
 import Discounts from './Components/Discounts'
 import Footer from './Components/Footer'
+import AboutUs from './Components/AboutUs'
+import Testimonials from './Components/Testimonials'
+import { testimonials } from './server/data'
 
 function App () {
   const dispatch = useDispatch()
@@ -27,7 +30,9 @@ function App () {
       <Top />
       <DiscoverCategories />
       <Discounts />
-      <Footer/>
+      <Testimonials data={testimonials} />
+      <AboutUs />
+      <Footer />
     </div>
   )
 }

@@ -256,15 +256,36 @@ div.swiper-slide {
   }
 }
 // #endregion shoecard
+// #region about-us
+.about-us {
+  margin-top: 100px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  h2,
+  p {
+    width: 700px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  p {
+    color: gray;
+  }
+}
+// #endregion about-us
 // #region top
 .top,
 .discounts {
+  background: #f6f6f6;
+  height: 100vh;
   position: relative;
   margin-top: 100px;
-  p.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2.title {
     text-align: center;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 90px !important;
   }
   .shoes-grid {
@@ -383,12 +404,16 @@ footer.footer {
   }
   .my-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 50px;
+    margin: 0px;
     a {
       text-decoration: none;
-      color: #da4d69;
+      color: gray;
+      &:hover {
+        color: rgb(162, 162, 162);
+      }
     }
     & > div {
       display: flex;
@@ -396,8 +421,16 @@ footer.footer {
       gap: 25px 0px;
       align-items: center;
       justify-content: start;
-      &:last-of-type {
-        flex-direction: row;
+      svg {
+        color: gray;
+        font-size: 35px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        &:hover {
+          color: white;
+          background-color: gray;
+        }
       }
       p {
         position: relative;
@@ -418,3 +451,52 @@ footer.footer {
     }
   }
 }
+// #endregion footer
+// #region testimonials
+.testimonials {
+  margin: 100px 0px;
+  .swiper.swiper-initialized.swiper-horizontal.swiper-css-mode{
+    height: 450px;
+  }
+  h2 {
+    margin-bottom: 75px;
+  }
+  .my-container {
+    text-align: center;
+    .testimonial {
+      height: 250px;
+      color: gray;
+      .name{
+        font-size: 20px;
+        font-weight: 500;
+        color: #da4d69;
+      }
+      .left-quote, .right-quote{
+        color: #da4d69;
+        margin: 0px 10px;
+        font-size: 20px;
+      }
+      width: 400px;
+      margin: auto;
+      position: relative;
+      background-color:#f6f6f6;
+      padding: 40px;
+      p {
+        width: 300px;
+        margin: 10px auto;
+      }
+      .circle {
+        width: 75px;
+        height: 75px;
+        background-color: white;
+        border: 2px solid gray;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+// #endregion testimonials

@@ -12,11 +12,11 @@ function Footer () {
           <a href='#'>Privacy Policy</a>
         </div>
         <div className='get-help'>
-          <p>Get Help</p>
-          <a href='#'>FAQ</a>
-          <a href='#'>Shipping</a>
-          <a href='#'>Returns</a>
-          <a href='#'>Payment Options</a>
+          <p>Links</p>
+          <a href='#leadingShoes'>Leading Shoes</a>
+          <a href='#About'>About Us</a>
+          <a href='#Categories'>Categories</a>
+          <a href='#Discounts'>Discounts</a>
         </div>
         <div className='online-shop'>
           <p>Online Shop</p>

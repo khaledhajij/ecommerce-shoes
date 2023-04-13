@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaRunning } from 'react-icons/fa'
 import { InputText } from 'primereact/inputtext'
 import nikeLogo from '../Assets/nike-logo.svg'
 const Navbar = () => {
+  const [showNav, setShowNav] = useState(true)
+
+  useEffect(() => {
+    window.onscroll = function (e) {
+      if (this.oldScroll > this.scrollY) {
+        setShowNav(true)
+      } else if (this.oldScroll < this.scrollY) {
+        setShowNav(false)
+      }
+      this.oldScroll = this.scrollY
+      delete window.onscroll
+    }
+  }, [])
+
   return (
-    <div className='navbar'>
+    <div
+      className='navbar'
+      style={!showNav ? { transform: 'translateY(-100px)' } : null}
+    >
       <div className='my-container'>
         <div className='logo'>
           <p>
