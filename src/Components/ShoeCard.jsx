@@ -36,7 +36,16 @@ const ShoeCard = props => {
           <p className='colors-available'>1 Color</p>
         </div>
         <div className='buy-price'>
-          <p className='price'>{props.salePrice * 0.012} $</p>
+          {props.discount ? (
+            <strike>
+              <p className='price'>{(props.salePrice) * 0.012} $</p>
+            </strike>
+          ) : (
+            <p className='price'>{(props.salePrice) * 0.012} $</p>
+          )}
+          {props.discount && (
+            <p className='price'>{(props.salePrice / 2) * 0.012} $</p>
+          )}
           <button className='btn btn-primary'>
             <FaShoppingCart />
           </button>

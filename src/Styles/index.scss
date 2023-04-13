@@ -199,7 +199,11 @@ div.swiper-slide {
 .shoe-card {
   display: flex;
   flex-direction: column;
-  width: min-content;
+  width: 275px;
+  border: 1px solid;
+  padding: 10px;
+  height: 420px;
+  border-radius: 2px;
   .info-container {
     p {
       margin-bottom: 0px;
@@ -455,7 +459,7 @@ footer.footer {
 // #region testimonials
 .testimonials {
   margin: 100px 0px;
-  .swiper.swiper-initialized.swiper-horizontal.swiper-css-mode{
+  .swiper.swiper-initialized.swiper-horizontal.swiper-css-mode {
     height: 450px;
   }
   h2 {
@@ -466,12 +470,13 @@ footer.footer {
     .testimonial {
       height: 250px;
       color: gray;
-      .name{
+      .name {
         font-size: 20px;
         font-weight: 500;
         color: #da4d69;
       }
-      .left-quote, .right-quote{
+      .left-quote,
+      .right-quote {
         color: #da4d69;
         margin: 0px 10px;
         font-size: 20px;
@@ -479,7 +484,7 @@ footer.footer {
       width: 400px;
       margin: auto;
       position: relative;
-      background-color:#f6f6f6;
+      background-color: #f6f6f6;
       padding: 40px;
       p {
         width: 300px;

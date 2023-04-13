@@ -200,8 +200,11 @@ div.swiper-slide {
 .shoe-card {
   display: flex;
   flex-direction: column;
-  width: -moz-min-content;
-  width: min-content;
+  width: 275px;
+  border: 1px solid;
+  padding: 10px;
+  height: 420px;
+  border-radius: 2px;
 }
 .shoe-card .info-container p {
   margin-bottom: 0px;
@@ -479,7 +482,8 @@ footer.footer .my-container > div p::after {
   font-weight: 500;
   color: #da4d69;
 }
-.testimonials .my-container .testimonial .left-quote, .testimonials .my-container .testimonial .right-quote {
+.testimonials .my-container .testimonial .left-quote,
+.testimonials .my-container .testimonial .right-quote {
   color: #da4d69;
   margin: 0px 10px;
   font-size: 20px;

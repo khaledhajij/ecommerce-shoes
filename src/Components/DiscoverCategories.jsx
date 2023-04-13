@@ -22,7 +22,7 @@ const DiscoverCategories = () => {
   return (
     <div className='discover-categories'>
       <div className='my-container'>
-        <h2>Nike Epic React Flyknit 2</h2>
+        <h2>Discover Our Categories</h2>
         <div className='image-description'>
           <div className='image-container'>
             <img src={reactFlyknit} alt='' />
@@ -30,11 +30,12 @@ const DiscoverCategories = () => {
             <div className='running-category'>Running Collection</div>
           </div>
           <p>
-            Introducing the <strong>Nike Epic React Flyknit 2</strong> - the
-            ultimate running shoe that will take your training to the next
-            level. With its innovative design and cutting-edge technologies, the
-            Epic React Flyknit 2 is the perfect shoe for runners who demand
-            performance and style.
+            Shop the latest collection of <br />
+            <strong>Nike shoes</strong>
+            <br /> for every occasion. Whether you're hitting the gym, going for
+            a run, or just need a stylish pair of sneakers to complete your
+            outfit, we've got you covered. Browse our selection of Nike shoes by
+            category to find the perfect pair for you
           </p>
         </div>
         <div className='circles-container'>{dots}</div>
